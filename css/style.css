@@ -1,0 +1,411 @@
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 1660px;
+  min-height: 3207px;
+}
+
+.welcome {
+  background: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg)
+    no-repeat;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 450px;
+  background-color: #000000;
+  position: relative;
+  background-position: center top;
+  z-index: 0;
+}
+
+.welcome::after {
+  content: "";
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.container {
+  width: 1200px;
+  min-height: 450px;
+  margin: auto;
+  padding: 29px 15px 127px 15px;
+  box-sizing: border-box;
+}
+
+.first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 179px;
+  height: 41px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 13px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link:nth-child(n + 2) {
+  margin-left: 35px;
+}
+
+.welcome-title {
+  text-align: center;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 45px;
+  color: white;
+  line-height: 75px;
+  margin: 105px auto auto auto;
+  text-transform: uppercase;
+  max-width: 700px;
+}
+
+.main-container {
+  width: 1170px;
+  min-height: 2420px;
+  margin: 0 auto 0 auto;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.content {
+  min-height: 2420px;
+  width: 778px;
+  margin: 64px 120px 0 0;
+  box-sizing: border-box;
+}
+
+.text {
+  display: flex;
+  margin-bottom: 59px;
+}
+
+.picture {
+  width: 381px;
+  height: 294px;
+  background-color: #eff6f1;
+}
+
+.desc {
+  margin-left: 30px;
+  width: 367px;
+}
+
+.link {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.link-captions {
+  display: inline;
+  margin-right: 13px;
+  line-height: 0;
+}
+
+.caption {
+  text-decoration: none;
+  color: #b59f5b;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 14px;
+}
+
+.caption:hover {
+  text-decoration: underline;
+}
+
+.header {
+  font-family: "OpenSans-Bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 4px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
+
+.header:hover {
+  color: #b59f5b;
+}
+
+.date {
+  display: flex;
+  margin-top: 25px;
+}
+
+time {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 12px;
+  margin-right: 14px;
+  color: #888888;
+}
+
+.autor {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 12px;
+}
+
+.paragraph {
+  margin-top: 47px;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 15px;
+}
+
+.paragraph-next {
+  margin-top: 12px;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 15px;
+}
+
+aside {
+  width: 272px;
+  min-height: 2420px;
+  margin: 64px 0px 64px 0px;
+  font-family: "OpenSans-Bold", sans-serif;
+}
+
+.header-aside {
+  text-align: center;
+  line-height: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.header-aside:after {
+  content: "";
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  display: block;
+  margin: 14px auto 20px auto;
+}
+
+.post {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.post:hover {
+  color: #b59f5b;
+}
+
+.aside-image {
+  width: 70px;
+  height: 70px;
+  margin-top: 8px;
+  background-color: #f4f7f6;
+}
+
+.post-text {
+  margin-left: 20px;
+  width: 180px;
+}
+
+.link-title {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.form {
+  margin-top: 60px;
+  margin-bottom: 62px;
+}
+
+.search {
+  width: 224px;
+  height: 48px;
+  border: 0;
+  text-indent: 20px;
+  background-color: #f4f7f6;
+}
+
+.search:focus {
+  outline: 1px solid #b59f5b;
+  outline-offset: -1px;
+}
+
+.btn {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  background-color: #b59f5b;
+  border: 0;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.button-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.form-sub {
+  width: 272px;
+  height: 114px;
+  margin-bottom: 61px;
+}
+
+.subscription {
+  width: 272px;
+  height: 48px;
+  text-indent: 20px;
+  border: 0;
+  background-color: #f4f7f6;
+}
+
+.subscription:focus {
+  outline: 1px solid #b59f5b;
+  outline-offset: -1px;
+}
+
+.btn-sub {
+  width: 272px;
+  height: 48px;
+  background-color: #b59f5b;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.btn-sub:hover {
+  background-color: black;
+}
+
+.tag-container {
+  margin-bottom: 59px;
+}
+
+.tags {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.tags-subject {
+  display: inline;
+  margin-right: 12px;
+  line-height: 35px;
+}
+
+.subject {
+  text-decoration: none;
+  color: black;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 12px;
+  padding: 2px 9px;
+  border: 3px solid #eeeeee;
+}
+
+.subject:hover {
+  border: 3px solid #b59f5b;
+  padding: 2px 9px;
+}
+
+.themes {
+  list-style-type: none;
+  font-size: 14px;
+}
+
+.thm {
+  padding-bottom: 24px;
+}
+
+.subtitle {
+  text-decoration: none;
+  color: inherit;
+}
+
+.subtitle:hover {
+  color: #b59f5b;
+}
+
+.index {
+  font-size: 12px;
+  color: #b59f5b;
+  padding-left: 5px;
+  vertical-align: super;
+}
+
+footer {
+  width: cover;
+  min-height: 210px;
+  margin-top: 0px;
+}
+
+address {
+  width: 1200px;
+  height: 20px;
+  padding: 22px 0 31px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f4f7f6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social {
+  height: 20px;
+  margin: 0 14px;
+}
+
+.copyright {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 73px;
+}
+
+.cpr {
+  text-decoration: none;
+  color: #999999;
+}
+
+.cpr:hover {
+  color: black;
+}
