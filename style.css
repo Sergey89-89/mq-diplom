@@ -364,7 +364,7 @@ template {
 }
 
 body {
-  min-width: 1660px;
+  width: 100vw;
   min-height: 3207px;
 }
 
@@ -395,7 +395,6 @@ body {
 }
 
 .container {
-  width: 1200px;
   min-height: 450px;
   margin: auto;
   padding: 29px 15px 127px 15px;
@@ -729,7 +728,7 @@ footer {
 }
 
 address {
-  width: 1200px;
+  width: 100vw;
   height: 20px;
   padding: 22px 0 31px 0;
   display: flex;
