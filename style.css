@@ -395,6 +395,7 @@ body {
 }
 
 .container {
+  width: 1200px;
   min-height: 450px;
   margin: auto;
   padding: 29px 15px 127px 15px;
@@ -443,6 +444,11 @@ body {
   text-transform: uppercase;
   max-width: 700px;
 }
+
+/*.top-aside {
+  width:;
+  height: 443px;
+}*/
 
 .main-container {
   width: 1170px;
@@ -722,13 +728,13 @@ aside {
 }
 
 footer {
-  width: cover;
+  width: 100vw;
   min-height: 210px;
   margin-top: 0px;
 }
 
 address {
-  width: 100vw;
+  width: 1200px;
   height: 20px;
   padding: 22px 0 31px 0;
   display: flex;
@@ -744,10 +750,11 @@ address {
 }
 
 .copyright {
+  width: 1200px;
   font-family: "OpenSans-Bold", sans-serif;
   font-size: 12px;
   text-align: center;
-  margin-top: 73px;
+  margin: 73px auto 0 auto;
 }
 
 .cpr {
