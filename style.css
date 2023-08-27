@@ -447,8 +447,7 @@ body {
 
 .top-aside {
   max-width: 1660px;
-  height: 443px;
-  text-align: center;
+  height: 380px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -459,6 +458,8 @@ body {
   font-size: 20px;
   color: black;
   margin-top: 64px;
+  text-align: center;
+  line-height: 14px;
 }
 
 .header-trend:after {
@@ -471,7 +472,7 @@ body {
 }
 
 .trends {
-  max-width: 1660px;
+  max-width: 100%;
   height: 320px;
   display: flex;
   gap: 0.3%;
@@ -772,6 +773,35 @@ time {
   color: #b59f5b;
   padding-left: 5px;
   vertical-align: super;
+}
+
+.bottom-aside {
+  max-width: 1200px;
+  min-height: 498px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products {
+  min-height: 440px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  width: 346px;
+}
+
+.product {
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-article {
+  min-height: 225px;
+  border: 3px solid #b59f5b;
+  margin-top: -32px;
 }
 
 footer {
