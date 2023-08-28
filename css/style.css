@@ -585,6 +585,7 @@ time {
   margin-top: 47px;
   font-family: "OpenSans-Regular", sans-serif;
   font-size: 15px;
+  line-height: 22px;
 }
 
 .paragraph-next {
@@ -789,17 +790,21 @@ time {
 
 .article {
   max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product {
+  height: 204px;
 }
 
 .text-article {
   display: flex;
-  flex-grow: 1;
   outline: 3px solid #b59f5b;
   outline-offset: 23px;
   margin-top: -9px;
+  flex-wrap: wrap;
+  
 }
 
 .product-header {
@@ -808,6 +813,83 @@ time {
   font-size: 20px;
   margin-top: 25px;
   color: black;
+}
+
+.section {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  margin-top: 17px;
+  line-height: 22px;
+}
+
+.section:hover {
+  font-weight: 800;
+}
+
+.gold-word {
+  color: #b59f5b;
+}
+
+.gold-word:hover {
+  text-decoration: underline;
+}
+
+.shop-link {
+  width: 100%;
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-family: "OpenSans-Bold", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+}
+
+.sale {
+  font-size: 14px;
+}
+
+.hidden-sale {
+  visibility: hidden;
+}
+
+.cost {
+  font-size: 20px;
+}
+
+.rub { 
+  line-height: 5px;
+  width: 0.5em;
+  border-bottom: 1px solid #000; 
+  display: inline-block;
+} 
+
+.rub2 { 
+  line-height: 6px;
+  width: 0.5em;
+  border-bottom: 1px solid #000; 
+  display: inline-block;
+} 
+
+.btn-link {
+  width: 140px;
+  height: 48px;
+  background-color: #b59f5b;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.btn-link:hover {
+  background-color: black;
 }
 
 footer {
