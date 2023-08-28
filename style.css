@@ -558,7 +558,6 @@ body {
   margin-top: 4px;
   text-decoration: none;
   color: black;
-  display: flex;
 }
 
 .header:hover {
@@ -776,7 +775,7 @@ time {
 }
 
 .bottom-aside {
-  max-width: 1200px;
+  max-width: 1124px;
   min-height: 498px;
   margin-left: auto;
   margin-right: auto;
@@ -789,19 +788,26 @@ time {
 }
 
 .article {
-  width: 346px;
+  max-width: 300px;
 }
 
 .product {
-  max-width: 300px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .text-article {
-  min-height: 225px;
-  border: 3px solid #b59f5b;
-  margin-top: -32px;
+  display: flex;
+  flex-grow: 1;
+  outline: 3px solid #b59f5b;
+  outline-offset: 23px;
+  margin-top: -9px;
+}
+
+.product-header {
+  font-family: "OpenSans-Bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 25px;
+  color: black;
 }
 
 footer {
