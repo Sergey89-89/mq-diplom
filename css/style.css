@@ -479,7 +479,7 @@ body {
 }
 
 .trend {
-  width: 24.7%;
+  width: 24.75%;
   object-fit: cover;
   position: relative;
   z-index:0;
@@ -776,7 +776,7 @@ time {
 }
 
 .bottom-aside {
-  max-width: 1124px;
+  max-width: 1170px;
   min-height: 498px;
   margin-left: auto;
   margin-right: auto;
@@ -786,25 +786,23 @@ time {
   min-height: 440px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .article {
   max-width: 300px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.product {
-  height: 204px;
+  display: grid;
+  grid-template-rows: 204px 1fr;
+  margin: 0 23px 23px 23px;
 }
 
 .text-article {
   display: flex;
   outline: 3px solid #b59f5b;
-  outline-offset: 23px;
+  outline-offset: 20px;
   margin-top: -9px;
   flex-wrap: wrap;
-  
+  align-content: flex-start;
 }
 
 .product-header {
@@ -895,7 +893,7 @@ time {
 footer {
   width: 100vw;
   min-height: 210px;
-  margin-top: 0px;
+  margin-top: 64px;
 }
 
 address {
