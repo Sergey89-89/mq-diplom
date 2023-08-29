@@ -476,11 +476,11 @@ body {
   height: 320px;
   display: flex;
   gap: 0.3%;
+  flex-wrap: wrap;
 }
 
 .trend {
   width: 24.75%;
-  object-fit: cover;
   position: relative;
   z-index:0;
 }
@@ -494,7 +494,37 @@ body {
   left: 0;
   bottom: 0;
   opacity: 0.6;
-  z-index: -1;
+  z-index: 1;
+}
+
+.tr {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.title-trend {
+  border: 3px solid rgba(181, 159, 91, 0.6);
+  position: absolute;
+  top: auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  margin: 16px 20px 16px 20px;
+  padding: 30px;
+}
+
+.hdr-top {
+  line-height: 10px;
+}
+
+.header-top-aside {
+  font-family: "OpenSans-Bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
 }
 
 .main-container {
