@@ -975,16 +975,18 @@ address {
   height: 589px;
   background-color: white;
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   left: 0;
   right: 0;
-  top: 20%;
+  top: 0;
+  bottom: 0;
+  font-family: "OpenSans-Regular", sans-serif;
 }
 
 .close-popup {
-  font-size: 30px;
-  line-height: 23px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../svg/form-x.svg);
   position: absolute;
   right: 0;
   border: 0;
@@ -999,4 +1001,64 @@ address {
   height: 480px;
   margin-top: 54px;
   margin-left: 30px;
+}
+
+.list {
+  font-size: 13px;
+}
+
+.list-survey {
+  width: 100%;
+  padding: 18px 20px;
+  margin-top: 9px;
+  border: 0;
+  background-color: #f4f7f6;
+  appearance: none;
+  background-image: url(../svg/form-arrows.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+  background-size: 12px;
+  outline: none;
+  margin-bottom: 33px;
+}
+
+.list-survey:focus {
+  border: 1px solid #b59f5b;
+}
+
+.radio-container {
+  margin-top: 8px;
+}
+
+.radio {
+  display: inline;
+}
+
+.radio input[type=radio] {
+  display: none;
+}
+
+.radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+
+.radio label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: url(../svg/form-empty-circle.svg) 0 0 no-repeat;
+}
+
+#no {
+  margin-left: 15px;
 }

@@ -313,10 +313,31 @@
 </footer>
 <div class="_hidden">
   <div class="popup">
-    <button type="button" class="close-popup">X</button>
+    <button type="button" class="close-popup"></button>
     <div class="form-popup">
       <h2 class="header-trend">Ваш фидбек</h2>
-      <input type="search" class="subscription" placeholder="Ваш e-mail адрес">
+      <div class="list">
+        Как часто вы заходите на сайт?
+      <select class="list-survey">
+        <option class="list-survey-choice">Почти каждый день</option>
+        <option class="list-survey-choice">Раз в несколько дней</option>
+        <option class="list-survey-choice">Раз в несколько недель</option>
+        <option class="list-survey-choice">Несколько раз в год</option>
+      </select>
+      </div>
+      <div class="list">
+        Вы подписаны на e-mail рассылку?
+      </div>
+      <div class="radio-container">
+        <div class="radio">
+          <input type="radio" id="yes" name="drone" value="yes" checked />
+          <label for="yes">Да</label>
+        </div>
+        <div class="radio">
+          <input type="radio" id="no" name="drone" value="no" checked />
+          <label for="no">Нет</label>
+        </div>
+      </div>
     </div>
   </div>
 </div>
