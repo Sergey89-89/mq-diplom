@@ -314,7 +314,7 @@
 <div class="_hidden">
   <div class="popup">
     <button type="button" class="close-popup"></button>
-    <div class="form-popup">
+    <form class="form-popup">
       <h2 class="header-trend">Ваш фидбек</h2>
       <div class="list">
         Как часто вы заходите на сайт?
@@ -330,15 +330,18 @@
       </div>
       <div class="radio-container">
         <div class="radio">
-          <input type="radio" id="yes" name="drone" value="yes" checked />
+          <input class="radio-btn" name="color" type="radio" id="yes" value="green" checked>
           <label for="yes">Да</label>
         </div>
         <div class="radio">
-          <input type="radio" id="no" name="drone" value="no" checked />
+          <input class="radio-btn" name="color" type="radio" id="no" value="green">
           <label for="no">Нет</label>
         </div>
       </div>
-    </div>
+      <label class="text-label" for="story">Расскажите, какой контент вы хотели бы видеть<br>на нашем сайте?</label>
+      <textarea class="text-input" id="story" name="story" placeholder="Может, больше рецептов?"></textarea>
+      <input class="sub-btn" type="submit" name="submitInfo" value="отправить">
+    </form>
   </div>
 </div>
 </body>

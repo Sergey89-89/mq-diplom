@@ -446,7 +446,6 @@ body {
 
 .top-aside {
   max-width: 1660px;
-  height: 380px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 64px;
@@ -472,7 +471,6 @@ body {
 
 .trends {
   max-width: 100%;
-  height: 320px;
   display: flex;
   gap: 0.3%;
   flex-wrap: wrap;
@@ -480,6 +478,7 @@ body {
 
 .trend {
   width: 24.75%;
+  height: 320px;
   position: relative;
   z-index:0;
 }
@@ -963,6 +962,7 @@ address {
 }
 
 ._hidden {
+  display: none;
   width: 100vw;
   height: 100vh;
   position:fixed;
@@ -1020,45 +1020,97 @@ address {
   background-size: 12px;
   outline: none;
   margin-bottom: 33px;
+  opacity: 0.54;
 }
 
 .list-survey:focus {
-  border: 1px solid #b59f5b;
+  outline: 1px solid #b59f5b;
+  opacity: 1;
 }
 
 .radio-container {
   margin-top: 8px;
+  margin-bottom: 30px;
 }
 
 .radio {
   display: inline;
 }
 
-.radio input[type=radio] {
-  display: none;
+.radio-btn {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
-.radio label {
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  padding-left: 25px;
-  margin-right: 0;
-  line-height: 18px;
+.radio-btn+label {
+  display: inline-flex;
+  align-items: center;
   user-select: none;
+  margin-right: 15px;
+  font-size: 13px;
 }
 
-.radio label:before {
-  content: "";
+.radio-btn+label::before {
+  content: '';
   display: inline-block;
   width: 17px;
-  height: 18px;
-  position: absolute;
-  left: 0;
-  bottom: 1px;
-  background: url(../svg/form-empty-circle.svg) 0 0 no-repeat;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(../svg/form-empty-circle.svg);
+  margin-right: 4px;
 }
 
-#no {
-  margin-left: 15px;
+.radio-btn:checked+label::before {
+    background-image: url(../svg/form-circle.svg);
+  }
+
+.text-label {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 13px;
+  display: block;
+}
+
+.text-input {
+  width: 100%;
+  height: 130px;
+  box-sizing: border-box;
+  background-color: #f4f7f6;
+  padding: 20px;
+  margin-top: 10px;
+  border: 0;
+  resize: none;
+  outline: none;
+}
+
+.text-input:focus {
+  outline: 1px solid #b59f5b;
+}
+
+.sub-btn {
+  width: 100%;
+  height: 48px;
+  margin-top: 25px;
+  border-radius: 0;
+  background-color: #b59f5b;
+  border: 0;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  font-family: "OpenSans-Bold", sans-serif;
+  cursor: pointer;
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+  .trends {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0.3vw;
+  }
+
+  .trend {
+    width: 100%;
+  }
 }
