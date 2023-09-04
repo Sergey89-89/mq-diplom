@@ -554,6 +554,7 @@ body {
   background-color: #eff6f1;
   margin-right: 30px;
   margin-bottom: 10px;
+  object-fit: cover;
 }
 
 .desc {
@@ -1306,10 +1307,6 @@ address {
     margin-bottom: 25px;
   }
 
-  ._hidden {
-  display: none;
-}
-
   .popup {
     height: 595px;
   }
@@ -1445,6 +1442,7 @@ address {
   .picture {
     width: 100%;
     height: 254px;
+    margin-right: 0;
   }
 
   .desc {
@@ -1568,6 +1566,47 @@ address {
 
   .copyright {
     margin: 48px auto 0 auto;
+  }
 
+  .popup {
+    height: 546px;
+    width: 330px;
+  }
 
+  .close-popup {
+    width: 27px;
+    height: 27px;
+  }
+
+  .form-popup {
+    width: 280px;
+    margin-top: 29px;
+    margin-left: 25px;
+  }
+
+  .list {
+    padding-top: 5px;
+  }
+
+  .list-survey {
+    background-size: 10px;
+    margin-bottom: 25px;
+  }
+
+  .radio-container {
+    margin-bottom: 28px;
+  }
+
+  .radio-btn+label::before {
+    width: 25px;
+    height: 25px;
+  }
+
+  .radio {
+    margin-right: 17px;
+  }
+
+  .sub-btn {
+    margin-top: 25px;
+  }
 }
