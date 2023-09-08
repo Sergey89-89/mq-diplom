@@ -368,8 +368,7 @@ body {
 }
 
 .welcome {
-  background: url(../images/banner-bg.jpg)
-    no-repeat;
+  background: url(../images/banner-bg.jpg) no-repeat;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -449,7 +448,6 @@ body {
 }
 
 .top-aside {
-  max-width: 1660px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 64px;
@@ -478,6 +476,7 @@ body {
   display: flex;
   gap: 0.3%;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .trend {
@@ -499,10 +498,32 @@ body {
   z-index: 1;
 }
 
-.tr {
+.tr-first {
+  background: url(../images/trend1.jpg) no-repeat;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  background-size: cover;
+}
+
+.tr-second {
+  background: url(../images/trend2.jpg) no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.tr-third {
+  background: url(../images/trend3.jpg) no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.tr-fourth {
+  background: url(../images/trend4.jpg) no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
 }
 
 .title-trend {
@@ -825,6 +846,9 @@ time {
 }
 
 .product {
+  width: 100%;
+  height: 100%;
+  display: block;
   background-color: #eff6f1;
 }
 

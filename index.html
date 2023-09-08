@@ -32,42 +32,46 @@
   <h2 class="header-trend">Сейчас в тренде</h2>
   <div class="trends">
     <div class="trend">
-      <img class="tr" src="images/trend1.jpg" alt="ядовитый плющ">
+      <div class="tr-first">
+      </div>
       <div class="title-trend">
         <ul class="link">
           <li class="link-captions"><a href="#0" class="caption">lifestyle</a></li>
           <li class="link-captions"><a href="#0" class="caption">interior</a></li>
-          <h2 class="hdr-top"><a href="#0" class="header-top-aside">Сейчас в тренде: сад<br>на подоконнике</a></h2>
         </ul>
+        <h2 class="hdr-top"><a href="#0" class="header-top-aside">Сейчас в тренде: сад<br>на подоконнике</a></h2>
       </div>
     </div>
     <div class="trend">
-      <img class="tr" src="images/trend2.jpg" alt="сыр">
+      <div class="tr-second">
+      </div>
       <div class="title-trend">
         <ul class="link">
           <li class="link-captions"><a href="#0" class="caption">food</a></li>
-          <h2 class="hdr-top"><a href="#0" class="header-top-aside">Cыры на красивых картинках из интернета: какие они на вкус?</a></h2>
         </ul>
-      </div>
-    </div>
-      <div class="trend">
-    <img class="tr" src="images/trend3.jpg" alt="горы">
-    <div class="title-trend">
-        <ul class="link">
-          <li class="link-captions"><a href="#0" class="caption">lifestyle</a></li>
-          <li class="link-captions"><a href="#0" class="caption">travel</a></li>
-          <h2 class="hdr-top"><a href="#0" class="header-top-aside">собираемся в первый поход в горы</a></h2>
-        </ul>
+        <h2 class="hdr-top"><a href="#0" class="header-top-aside">Cыры на красивых картинках из интернета: какие они на вкус?</a></h2>
       </div>
     </div>
     <div class="trend">
-      <img class="tr" src="images/trend4.jpg" alt="лимоны">
+      <div class="tr-third">
+      </div>
+      <div class="title-trend">
+        <ul class="link">
+          <li class="link-captions"><a href="#0" class="caption">lifestyle</a></li>
+          <li class="link-captions"><a href="#0" class="caption">travel</a></li>
+        </ul>
+        <h2 class="hdr-top"><a href="#0" class="header-top-aside">собираемся в первый поход в горы</a></h2>
+      </div>
+    </div>
+    <div class="trend">
+      <div class="tr-fourth">
+      </div>
       <div class="title-trend">
         <ul class="link">
           <li class="link-captions"><a href="#0" class="caption">food</a></li>
           <li class="link-captions"><a href="#0" class="caption">health</a></li>
-          <h2 class="hdr-top"><a href="#0" class="header-top-aside">Сейчас в тренде: сколько витамина C в лимонах?</a></h2>
         </ul>
+        <h2 class="hdr-top"><a href="#0" class="header-top-aside">Сейчас в тренде: сколько витамина C в лимонах?</a></h2>
       </div>
     </div>
   </div>
@@ -251,9 +255,12 @@
   <h2 class="header-trend">Наши изделия</h2>
   <div class="products">
     <div class="article">
-      <img class="product" src="images/shop-item-desk1.jpg" alt="подушка">
-      <img class="product-tablet" src="images/shop-item-tablet1.jpg" alt="подушка">
-      <img class="product-mobile" src="images/shop-item-mobile1.jpg" alt="подушка">
+      <picture>
+        <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1201px)">
+        <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+        <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 641px)">
+        <img src="images/shop-item-desk1.jpg" alt="подушка">
+      </picture>
       <div class="text-article">
         <h2 class="product-header">Подушки на диван</h2>
         <a href="#0" class="section">Набор из двух подушек с модными принтами. Видео о создании <span class="gold-word">здесь.</span></a>
