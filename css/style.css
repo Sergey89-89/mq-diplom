@@ -642,7 +642,7 @@ time {
 }
 
 .paragraph-next {
-  margin-top: -12px;
+  margin-top: 8px;
   font-family: "OpenSans-Regular", sans-serif;
   font-size: 15px;
   line-height: 22px;
@@ -1275,6 +1275,9 @@ address {
   .paragraph {
     margin: 25px 0 23px 0;
     width: 100%;
+  }
+  .paragraph-next {
+    margin-top: -12px;
   }
 
   .second-aside {
